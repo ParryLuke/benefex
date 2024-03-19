@@ -2,7 +2,7 @@
 #region = "eu-west-2"
 
 #name_prefix = "blog"
-#office_ip   = "80.193.23.74/32"
+#office_ip   = "xxx"
 
 # Auto Scaling group / launch template settings
 #instance_type    = "t2.micro"
