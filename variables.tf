@@ -10,7 +10,7 @@ variable "name_prefix" {
 
 variable "office_ip" {
   type    = string
-  default = "80.193.23.74/32"
+  default = "xxx"
 }
 
 variable "instance_type" {
