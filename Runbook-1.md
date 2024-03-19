@@ -11,4 +11,4 @@ The default region for the blogs site is London (eu-west-2). To change the regio
 - There is no AWS region in Belgium, instructions reflect an example deploy to Frankfurt (eu-central-1)
 - Future improvements include:
 1. Automated snapshots for existing and new block devices using lifecycle manager. 'snapshot_id' can be used to recover volumes when deploying across region
-2. Adding an Application Load balancer, shorter term solution using round robin from Route53 to the instances
+2. Adding an Application Load balancer, shorter term solution using round robin from Route53 to the instances (although this is not defined in the requirements, this would be required for the website to run as expected for users)
