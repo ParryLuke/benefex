@@ -18,5 +18,5 @@ To add an additional data drive for logs, a new block device mapping is needed:
 3. Commit changes to version control
 4. Run _terraform apply_ to add the new volumes to the EC2 instances. **Note** this will incur downtime, as the launch template will be updated and the instances will be refreshed by the Auto Scaling group
 
-## Benefix notes
+## Benefex notes
 - Unsure about wording in task question 'Adding an additional Data drive for logs to the existing deployment.'. I took this to mean solely adding a new block device for logs. I thought this could be interpreted as 'This must store logs for the terraform deployment itself', although this seemed unlikely.
