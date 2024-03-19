@@ -20,3 +20,4 @@ To add an additional data drive for logs, a new block device mapping is needed:
 
 ## Benefex notes
 - Unsure about wording in task question 'Adding an additional Data drive for logs to the existing deployment.'. I took this to mean solely adding a new block device for logs. I thought this could be interpreted as 'This must store logs for the terraform deployment itself', although this seemed unlikely.
+- A potential future improvement: Use a "dynamic" block with for_each to create multiple volumes from a specified "number of volumes" variable. This seemed overkill for the requirement.
