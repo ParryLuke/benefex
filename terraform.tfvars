@@ -15,10 +15,11 @@
 #    device_name          = "/dev/sdb"
 #    volume_size          = 5
 #    snapshot_id          = "snap-" # restore from snapshot
-#  }
+#  },
 #  {
 #   device_name          = "/dev/sdc"
 #   volume_size          = 10
 #   snapshot_id          = "" # no snapshot, logs only
 # }
+# # Add more volumes as necessary
 #]
