@@ -1,5 +1,5 @@
 # Defaults have been set in variables.tf, override here
-region = "eu-west-2"
+#region = "eu-west-2"
 
 #name_prefix = "blog"
 #office_ip   = "xxx"
