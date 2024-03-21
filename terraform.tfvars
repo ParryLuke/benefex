@@ -21,5 +21,5 @@
 #   volume_size          = 10
 #   snapshot_id          = "" # no snapshot, logs only
 # }
-# # Add more volumes as necessary
+# # Add more volumes as needed
 #]
