@@ -1,8 +1,8 @@
 # Adding an additional data drive
 To add an additional data drive for logs, a new block device mapping is needed:
 
-1. Open _variables.tf_ and find __volume\_details__
-2. Specify a new block device (e.g. /dev/sdc) as part of the __volume\_details__ variable in __terraform.tfvars__, ensure that the configuration is not commented out, as is by default (preceded with # symbol). **Do not remove the existing volume /dev/sdb**:
+1. Open _variables.tf_ and find _volume\_details_
+2. Specify a new block device (e.g. /dev/sdc) as part of the _volume\_details_ variable in _terraform.tfvars_, ensure that the configuration is not commented out, as is by default (preceded with # symbol). **Do not remove the existing volume /dev/sdb**:
 ```
 volume_details = [
   {
