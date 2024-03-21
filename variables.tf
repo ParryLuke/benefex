@@ -43,8 +43,7 @@ variable "volume_details" {
     {
       device_name = "/dev/sdb"
       volume_size = 5
-      snapshot_id = "" # Empty or snapshot ID
+      snapshot_id = ""
     }
-    # Add more volumes as needed
   ]
 }
