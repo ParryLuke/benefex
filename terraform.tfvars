@@ -1,5 +1,5 @@
 # Defaults have been set in variables.tf, override here
-#region = "eu-west-2"
+region = "eu-west-2"
 
 #name_prefix = "blog"
 #office_ip   = "xxx"
@@ -9,4 +9,16 @@
 #desired_capacity = 2
 #min_size         = 2
 #max_size         = 2
-#volume_size      = 20
+
+#volume_details = [
+#  {
+#    device_name          = "/dev/sdb"
+#    volume_size          = 5
+#    snapshot_id          = "snap-" # restore from snapshot
+#  }
+#  {
+#   device_name          = "/dev/sdc"
+#   volume_size          = 10
+#   snapshot_id          = "" # no snapshot, logs only
+# }
+#]

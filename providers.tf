@@ -12,7 +12,7 @@ terraform {
 provider "aws" {
   region = var.region
 
-  # Default tags for resources, applies to all resources except ASGs
+  # Default tags for resources, applies to all resources except ASGs/launch templates. Variable cannot be used here
   default_tags {
     tags = {
       Environment = "techBlog"

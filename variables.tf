@@ -33,24 +33,18 @@ variable "max_size" {
   default = 2
 }
 
-variable "volume_size" {
-  type    = number
-  default = 20
-}
-
-variable "default_tags" {
-  type = map(string)
-  default = {
-    Environment = "techBlog"
-  }
-}
-
-variable "default_tag_asg_label" {
-  type    = string
-  default = "Environment"
-}
-
-variable "default_tag_asg_value" {
-  type    = string
-  default = "techBlog"
+variable "volume_details" {
+  type = list(object({
+    device_name = string
+    volume_size = number
+    snapshot_id = string
+  }))
+  default = [
+    {
+      device_name = "/dev/sdb"
+      volume_size = 5
+      snapshot_id = "" # Empty or snapshot ID
+    }
+    # Add more volumes as needed
+  ]
 }

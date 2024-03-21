@@ -1,3 +1,16 @@
+# Return default VPC
+data "aws_vpc" "default" {
+  default = true
+}
+
+# Return default subnets
+data "aws_subnets" "default_vpc_subnets" {
+  filter {
+    name   = "vpc-id"
+    values = [data.aws_vpc.default.id]
+  }
+}
+
 # Return list of available zones
 data "aws_availability_zones" "available" {
   state = "available"
@@ -18,3 +31,6 @@ data "aws_ami" "ami" {
     values = ["available"]
   }
 }
+
+# Retrieve default tags from provider for use in ASGs
+data "aws_default_tags" "current" {}
